@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom'
 
 import '../../App.css'
+import BackgroundImage from '../../assets/images/bg.jpg'
 
 export default function AboutPage () {
     return (
@@ -19,7 +20,7 @@ export default function AboutPage () {
                             <p className="profile-rating mt-3 mb-5">Rankings: <span> 1/10</span></p>
                             
 
-                            <ul className="nav nav-tabs" role="tablist">
+                            {/* <ul className="nav nav-tabs" role="tablist">
                                 <li className="nav-item">
                                 <a className="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab">Active</a>
 
@@ -30,24 +31,24 @@ export default function AboutPage () {
                                 </li>
 
 
-                            </ul>
+                            </ul> */}
                         </div>
                     </div>
 
-                    <div className="col-md-2">
+                    <div className="col-md-10">
                         <input type="submit" className="profile-edit-btn" name="btnAddMore" value="Edit Profile" />
                     </div>
                 </div>
 
-                <div className="row">
+                {/* <div className="row">
 
-                    <div className="col-md-4">
+                    <div className="col-md-8">
                         <div className="profile-work">
                             <p> WORK LINK</p>
 
                         </div>
                     </div>
-                </div>
+                </div> */}
             </from>
         </div>
 

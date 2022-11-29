@@ -2,13 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import '../../App.css'
+import BackgroundImage from '../../assets/images/bg.jpg'
 
 export default function SignUpPage() {
 
     return (
-        <div className="text-center m-5-auto">
-            <h2>Join us</h2>
-            <h5>Create your personal account</h5>
+        <div className="text-center m-5-auto" style={ HeaderStyle }>
+            <h2 id="reg_header">Join us</h2>
+            <h5 id="reg_header">Create your personal account</h5>
             <form action="/home">
                 <p>
                     <label>Username</label><br/>
@@ -36,4 +37,13 @@ export default function SignUpPage() {
         </div>
     )
 
+}
+const HeaderStyle = {
+    width: "100%",
+    height: "120vh",
+    background: `url(${BackgroundImage})`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover", 
+    opacity : 0.9
 }

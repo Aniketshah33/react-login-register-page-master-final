@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import '../../App.css'
+import BackgroundImage from '../../assets/images/bg.jpg'
 
 export default function ForgetPasswordPage() {
     return (

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 
 import '../../App.css'
+import BackgroundImage from '../../assets/images/bg.jpg'
 
 export default function SignInPage() {
 
@@ -10,8 +11,8 @@ export default function SignInPage() {
     
     
     return (
-        <div className="text-center m-5-auto">
-            <h2>Sign in to us</h2>
+        <div className="text-center m-5-auto" id="main_login" style={ HeaderStyle }>
+            <h2 id="reg_header">Sign in to Us</h2>
             <form action="/home">
             
                 <p>
@@ -37,3 +38,13 @@ export default function SignInPage() {
         </div>
     )
 }
+const HeaderStyle = {
+    width: "100%",
+    height: "120vh",
+    background: `url(${BackgroundImage})`,
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover", 
+    opacity : 0.9
+}
+

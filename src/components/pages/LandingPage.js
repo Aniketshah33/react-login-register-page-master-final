@@ -2,13 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import '../../App.css'
-import BackgroundImage from '../../assets/images/bg.png'
+import BackgroundImage from '../../assets/images/bg.jpg'
 
 export default function LandingPage() {
+    
     return (
         <header style={ HeaderStyle }>
             <h1 className="main-title text-center">login / register page</h1>
-            <p className="main-para text-center">join us now and don't waste time</p>
+            <p className="main-para text-center">Welcome To PCPS</p>
             <div className="buttons text-center">
                 <Link to="/login">
                     <button className="primary-button">log in</button>
@@ -27,5 +28,6 @@ const HeaderStyle = {
     background: `url(${BackgroundImage})`,
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    backgroundSize: "cover"
+    backgroundSize: "cover", 
+    opacity : 0.9
 }
